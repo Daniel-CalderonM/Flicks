@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A363B"
+    android:textColor="#E84A5F"
+    tools:context="com.example.calderond.flicks.MovieDetailsActivity">
+
+
+<TextView
+    android:textColor="#99B898"
+    android:gravity="center"
+    android:includeFontPadding="false"
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:text="Movie Title"
+    android:textAppearance="@android:style/TextAppearance.Large"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"/>
+    <RatingBar
+        android:id="@+id/rbVoteAverage"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_below="@id/player"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:textColor="#99B898"
+
+        android:id="@+id/tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@id/rbVoteAverage"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/backDrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvTitle"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/flicks_backdrop_placeholder" />
+
+    <ImageButton
+        android:layout_below="@id/tvTitle"
+        android:id="@+id/btnSubmit"
+        android:layout_width="129dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/play_btn_small"
+        android:background="@drawable/play_btn_small"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
