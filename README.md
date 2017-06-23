@@ -25,6 +25,9 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [ ] List anything else that you can get done to improve the app functionality!
+ Added the ability for one to be able to search movies. 
+ Added ability for user to write review for the movie.
+ Added ability for user to purchase ticket for the movie.
 
 ## Video Walkthrough
 
@@ -37,7 +40,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Faced a challenge with loading youtube video. Ensure that value being loaded is the youtube key not the youtube id for the video. This mistake can come up as, this video...[error 400]
 
 ## Open-source libraries used
 
